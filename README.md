@@ -9,7 +9,8 @@ This simple Titanium module declares a receiver that relays all the INSTALL_REFE
 - Install your Google Analytics module of choice locally. We usually use Ti.GA (https://github.com/benbahrenburg/Ti.GA).
 - Install this module.
 - Add this lines to the `tiapp.xml` of your app:
-```
+
+```xml
 <receiver android:name="ti.tunegareceiver.InstallReceiver" android:enabled="true" android:exported="true">
 	<intent-filter>
 		<action android:name="com.android.vending.INSTALL_REFERRER"/>

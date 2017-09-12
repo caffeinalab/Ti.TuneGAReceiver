@@ -1,0 +1,18 @@
+%define lookup-function-name lookupGeneratedInit
+%define class-name TiTuneGAReceiverBindings
+%{
+
+#include <string.h>
+#include <v8.h>
+#include <KrollBindings.h>
+
+#include "ti.tunegareceiver.ExampleProxy.h"
+#include "ti.tunegareceiver.TiTuneGAReceiverModule.h"
+
+
+%}
+struct titanium::bindings::BindEntry;
+%%
+ti.tunegareceiver.ExampleProxy, ::ti::tunegareceiver::titunegareceiver::ExampleProxy::bindProxy, ::ti::tunegareceiver::titunegareceiver::ExampleProxy::dispose
+ti.tunegareceiver.TiTuneGAReceiverModule, ::ti::tunegareceiver::TiTuneGAReceiverModule::bindProxy, ::ti::tunegareceiver::TiTuneGAReceiverModule::dispose
+%%

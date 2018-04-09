@@ -16,12 +16,13 @@ This simple Titanium module for Android declares a receiver that relays all the 
 		<action android:name="com.android.vending.INSTALL_REFERRER"/>
 	</intent-filter>
 </receiver>
-<meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+<!-- The next line is needed only in version 1.0.0 of the module -->
+<!-- <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/> -->
 ```
 
 ## Troubleshooting
 
-### Google Play Services
+### Google Play Services (only for version 1.0.0)
 
 If you see this kind of error when you compile the app:
 `[ERROR] Uncaught translation error: java.lang.IllegalArgumentException: already added: Lcom/google/android/gms/analytics/CampaignTrackingReceiver;`

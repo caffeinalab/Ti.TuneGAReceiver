@@ -2,9 +2,9 @@
 # this is your module manifest and used by Titanium
 # during compilation, packaging, distribution, etc.
 #
-version: 1.0.0
-apiversion: 3
-architectures: armeabi-v7a x86
+version: 2.0.0
+apiversion: 4
+architectures: arm64-v8a armeabi-v7a x86
 description: Ti.TuneGAReceiver
 author: Your Name
 license: Specify your license
@@ -15,4 +15,4 @@ name: Ti.TuneGAReceiver
 moduleid: ti.tunegareceiver
 guid: 5f0ebaac-2c77-495f-897f-7e245980d946
 platform: android
-minsdk: 6.0.4.CAFFEINA-1
+minsdk: 7.1.0
